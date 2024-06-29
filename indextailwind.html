@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deidine Oul Cheigeur</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <nav class="flex flex-col md:flex-row items-center justify-between bg-gray-100 text-black p-6"
+        style="background-color: #4f98e0 !important;">
+        <div class="flex flex-row text-black" >
+           
+            <a href="index.html">
+                <img src="assets/img/deidine.jpeg" class="rounded-l inline-block overflow-clip"
+                    style="border-radius: 13px;" width="50" height="50" alt="Deidine">&nbsp;
+            </a>
+            <button class="mr-0 md:hidden text-white" type="button" id="toggle-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+         
+            <p class="text-2xl ml-4"
+                style="color: #fed136; font-family: &quot;Kaushan Script&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, cursive;">
+                DEIDINE CHEIGEUR</p>
+                
+        </div>
+    
+
+        <div 
+         style="background-color: #4f98e0 !important;"
+        
+        class="md:hidden transition-duration-10000 opacity-2 absolute top-0 right-0 h-screen w-64 bg-gray-800 text-white p-4 overflow-y-auto z-50" id="navbar-menu">
+            <ul class="text-uppercase">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mylinks.html">My Links</a></li>
+            </ul>
+        </div>
+    
+        <div class="hidden md:flex flex-col md:flex-row md:items-center md:justify-end">
+            <ul class="flex flex-col md:flex-row md:space-x-4 text-uppercase">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <div class="relative group">
+                    <li class="nav-item mt-2 md:mt-0">
+                        <button type="button" class="bg-blue-400 text-white px-4 py-2 border-red-200 border-2 rounded-md text-lg focus:outline-none"
+                            >
+                            روابطي
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-balck shadow-lg mt-2 rounded-md">
+                            <a class="block px-4 py-2 text-black hover:bg-gray-200 z-10 text-white" href="mylinks.html">My Links</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        const toggleMenu = document.getElementById('toggle-menu');
+        const navbarMenu = document.getElementById('navbar-menu');
+    
+        toggleMenu.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+
+        });
+    </script>
+<main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-yellow-400">
+
+    <div class="flex flex-col items-center justify-center w-full md:w-3/4 lg:w-2/3">
+        <h1 class="text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl" dsata-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+            <strong>Deidine Oul cheigeur</strong><br>
+            <strong>Deidine site</strong><br>
+        </h1>
+        <p class="text-xl font-bold text-gray-800 md:text-2xl lg:text-3xl" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+            <strong><em>add page that have your comment الموقع الرسمي لديدين</em></strong><br>
+        </p>
+        <div class="flex gap-3 mt-4">
+            <a class="rounded-xl bg-yellow-500 p-2 text-white" role="button" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" data-aos-once="true" href="index.html#about">Learn More</a>
+            <a class="rounded-xl bg-gray-800 p-2 text-white" role="button" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000" data-aos-once="true" href="./mycv%202024.pdf">Look to MY CV</a>
+        </div>
+    </div>
+
+    <div class="mt-10 md:mt-20 lg:mt-32">
+        <img data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true"
+            class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover" src="assets/img/deidine.jpeg">
+    </div>
+
+</main>
+
+<footer  style="background-color: #4f98e0 !important;" class="bg-gray-800 text-white p-4">
+    يمكنك الاتصال بي على واتسابي
++22249619609
+</footer>
+</body>
+
+</html>
